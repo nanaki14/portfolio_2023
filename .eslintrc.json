@@ -1,0 +1,72 @@
+{
+  "extends": [
+    "standard",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "typescript-sort-keys",
+    "sort-keys-fix",
+    "sort-destructure-keys",
+    "unused-imports"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "tailwindcss": {
+      "groupByResponsive": true
+    }
+  },
+  "rules": {
+    "@typescript-eslint/adjacent-overload-signatures": "error",
+    "@typescript-eslint/sort-type-constituents": "warn",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "none",
+          "requireLast": false
+        }
+      }
+    ],
+    "typescript-sort-keys/interface": "error",
+    "react/prop-types": "off",
+    "react/jsx-sort-props": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/no-unknown-property": ["error", { "ignore": ["jsx", "global"] }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "@next/next/no-img-element": "off",
+    "@next/next/next-script-for-ga": "off",
+    "import/first": "off",
+    "import/named": "off",
+    "import/namespace": "off",
+    "import/no-named-as-default": "off",
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "no-dupe-class-members": "off",
+    "import/no-unresolved": "off",
+    "import/order": ["error"],
+    "sort-keys-fix/sort-keys-fix": "warn",
+    "sort-destructure-keys/sort-destructure-keys": 2,
+    "tailwindcss/no-custom-classname": "off"
+  },
+  "globals": {
+    "requestAnimationFrame": true,
+    "localStorage": true
+  },
+  "ignorePatterns": ["tailwind/*.js", "$path.ts"]
+}
