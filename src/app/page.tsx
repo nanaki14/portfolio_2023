@@ -6,9 +6,9 @@ export const metadata: Metadata = {
 
 const Home: NextPage = () => {
   return (
-    <>
-      <div>top page</div>
-    </>
+    <div className="flex h-screen items-center justify-center text-5xl">
+      サグラダファミリア
+    </div>
   )
 }
 

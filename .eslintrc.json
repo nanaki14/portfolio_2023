@@ -46,7 +46,7 @@
     "react/prop-types": "off",
     "react/jsx-sort-props": "warn",
     "react/react-in-jsx-scope": "off",
-    "react/no-unknown-property": ["error", { "ignore": ["jsx", "global"] }],
+    "react/no-unknown-property": ["off", { "ignore": ["jsx", "global"] }],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "@next/next/no-img-element": "off",

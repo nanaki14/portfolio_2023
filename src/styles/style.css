@@ -8,6 +8,7 @@ html {
 }
 
 body {
+  height: 100svh;
   word-break: normal;
   line-break: strict;
   word-wrap: break-word;
@@ -25,4 +26,11 @@ select {
 
 img {
   backface-visibility: hidden;
+}
+
+.BgNoise {
+  background: url('/noise.gif') repeat;
+  opacity: 0.2;
+  mix-blend-mode: hard-light;
+  filter: brightness(112%);
 }
